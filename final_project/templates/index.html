@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>НеГугл</title>
+	</head>
+	<body>
+		<div align = center>
+			<h2>Совсем не гугл, но попробовать можно</h2>
+			<br>
+		</div>
+		<div align = center>
+			<form method='GET' action="/results">
+				<input type='text' size=30 maxlength=100 name='q' placeholder="введите запрос"/>
+				<select name = 'model'>
+					<option>tf-idf</option>
+					<option>BM25</option>
+					<option>fasttext</option>
+				</select>
+				<br>
+				<br>
+				<input type='submit' value='пусть мне повезет'>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Результаты</title>
+	</head>
+	<body>
+		<div align = center>
+			<h3>Получилось найти по запросу "{{query}}"</h3>
+		</div>
+		<ol>
+			{% for res in response %}
+			<li>{{res}}</li>
+			{% endfor %}
+		</ol>
+		<br>
+		<div align = center>
+			<form method='GET' action="/">
+				<input type='submit' value='вернуться к поиску'>
+			</form>
+		</div>
+	</body>
+</html>
